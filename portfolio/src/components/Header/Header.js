@@ -30,6 +30,14 @@ const Header = () => {
             </ul>
           </div>
           {/* =========== menu end ===========  */}
+          {/* =========== menu right ===========  */}
+          <div className='flex items-center gap-4'>
+            <button className='flex items-center gap-2 text-smallTextColor font-[600] border border-solid
+            border-smallTextColor py-2 px-4 rounded-[8px] max-h-[40px]'>
+            <i class="ri-mail-send-line"></i>Let's Talk
+            </button>
+          </div>
+          {/* =========== menu end ===========  */}
 
         </div>
       </div>
