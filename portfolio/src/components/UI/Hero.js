@@ -114,7 +114,7 @@ const Hero = () => {
           >
             <div className="mb-10">
               <h2 className="text-headingColor font-[700] text-[32px]">
-                <CountUp start={0} end={6} duration={2} suffix="+" />
+                <CountUp start={0} end={1} duration={5} suffix="+" />
               </h2>
               <h4 className="text-headingColor font-[600] text-[18px]">
                 Years of Experience
@@ -138,10 +138,10 @@ const Hero = () => {
             </div>
             <div className="mb-10">
               <h2 className="text-headingColor font-[700] text-[32px]">
-                <CountUp start={0} end={150} duration={2} suffix="+" />
+                <CountUp start={0} end={1000} duration={2} suffix="+" />
               </h2>
               <h4 className="text-headingColor font-[700] text-[18px]">
-                Happy Clients
+                Hours Spent Coding
               </h4>
             </div>
           </div>
