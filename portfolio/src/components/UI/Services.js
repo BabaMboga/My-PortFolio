@@ -1,8 +1,8 @@
 import React from "react";
-import frontendImg from '../../assets/images/front-end.png'
-import backendImg from '../../assets/images/backend.png'
-import uiuxImg from '../../assets/images/design.png'
-import appsImg from '../../assets/images/apps.png'
+import frontendImg from "../../assets/images/front-end.png";
+import backendImg from "../../assets/images/backend.png";
+import uiuxImg from "../../assets/images/design.png";
+import appsImg from "../../assets/images/apps.png";
 
 const Services = () => {
   return (
@@ -52,10 +52,12 @@ const Services = () => {
                     </div>
                   </div>
 
-                  <div className="rounded-full bg-primaryColor border-white border-4 w-10 h-10 absolute
-                  left-1/2 transform -translate-x-1/2 -translate-y-4 sm:translate-y-0 flex items-center justify-center">
+                  <div
+                    className="rounded-full bg-primaryColor border-white border-4 w-10 h-10 absolute
+                  left-1/2 transform -translate-x-1/2 -translate-y-4 sm:translate-y-0 flex items-center justify-center"
+                  >
                     <figure>
-                        <img src={frontendImg} alt=''/>
+                      <img src={frontendImg} alt="" />
                     </figure>
                   </div>
                 </div>
@@ -68,7 +70,7 @@ const Services = () => {
                     <div className="w-full sm:w-1/2 sm:pl-8">
                       <div
                         data-aos="fade-left"
-                        data-aos-delay='50'
+                        data-aos-delay="50"
                         data-aos-duration="1300"
                         className="bg-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer 
                                         ease-in duration-150"
@@ -88,15 +90,16 @@ const Services = () => {
                     </div>
                   </div>
 
-                  <div className="rounded-full bg-primaryColor border-white border-4 w-10 h-10 absolute
-                  left-1/2 transform -translate-x-1/2 -translate-y-4 sm:translate-y-0 flex items-center justify-center">
+                  <div
+                    className="rounded-full bg-primaryColor border-white border-4 w-10 h-10 absolute
+                  left-1/2 transform -translate-x-1/2 -translate-y-4 sm:translate-y-0 flex items-center justify-center"
+                  >
                     <figure>
-                        <img src={uiuxImg} alt=''/>
+                      <img src={uiuxImg} alt="" />
                     </figure>
                   </div>
                 </div>
               </div>
-
 
               {/* ================= left card ================= */}
               <div className="mt-6 sm:mt-0 sm:mb-12">
@@ -105,7 +108,7 @@ const Services = () => {
                     <div className="w-full sm:w-1/2 sm:pr-8">
                       <div
                         data-aos="fade-right"
-                        data-aos-delay='100'
+                        data-aos-delay="100"
                         data-aos-duration="1400"
                         className="bg-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer 
                                         ease-in duration-150"
@@ -125,10 +128,12 @@ const Services = () => {
                     </div>
                   </div>
 
-                  <div className="rounded-full bg-primaryColor border-white border-4 w-10 h-10 absolute
-                  left-1/2 transform -translate-x-1/2 -translate-y-4 sm:translate-y-0 flex items-center justify-center">
+                  <div
+                    className="rounded-full bg-primaryColor border-white border-4 w-10 h-10 absolute
+                  left-1/2 transform -translate-x-1/2 -translate-y-4 sm:translate-y-0 flex items-center justify-center"
+                  >
                     <figure>
-                        <img src={backendImg} alt=''/>
+                      <img src={backendImg} alt="" />
                     </figure>
                   </div>
                 </div>
@@ -141,7 +146,7 @@ const Services = () => {
                     <div className="w-full sm:w-1/2 sm:pl-8">
                       <div
                         data-aos="fade-left"
-                        data-aos-delay='150'
+                        data-aos-delay="150"
                         data-aos-duration="1500"
                         className="bg-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer 
                                         ease-in duration-150"
@@ -161,16 +166,16 @@ const Services = () => {
                     </div>
                   </div>
 
-                  <div className="rounded-full bg-primaryColor border-white border-4 w-10 h-10 absolute
-                  left-1/2 transform -translate-x-1/2 -translate-y-4 sm:translate-y-0 flex items-center justify-center">
+                  <div
+                    className="rounded-full bg-primaryColor border-white border-4 w-10 h-10 absolute
+                  left-1/2 transform -translate-x-1/2 -translate-y-4 sm:translate-y-0 flex items-center justify-center"
+                  >
                     <figure>
-                        <img src={appsImg} alt=''/>
+                      <img src={appsImg} alt="" />
                     </figure>
                   </div>
                 </div>
               </div>
-
-
             </div>
           </div>
         </div>
