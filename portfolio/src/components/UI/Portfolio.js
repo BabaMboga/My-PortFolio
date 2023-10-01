@@ -1,7 +1,15 @@
-import React from "react";
+import React, {useState, useEFfect} from "react";
 import data from '../../assets/data/portfolioData'
 
 const Portfolio = () => {
+
+    const [nextItems, setNextItems] = useState(6)
+    const [portfolios, setPortfolios] = useState(data)
+
+    const loadMoreHandler = () => {
+        setNextItems(prev => prev + 3)
+    }
+
   return (
     <section id="portfolio">
       <div className="container">
@@ -34,8 +42,8 @@ const Portfolio = () => {
 
         <div className="flex items-center gap-4 flex-wrap mt-12">
             {
-                data?.map((portfolio, index) =>(
-                    <div data-aos="fade-zoom-in" data-aos-delay='50' data-aos-duration='1000'  className="group max-w-full sm:w-[48.5%] md:w-[31.8%] lg:w-[32.2%] relative z-[1]">
+                portfolios?.slice(0, nextItems)?.map((portfolio, index) =>(
+                    <div key={index} data-aos="fade-zoom-in" data-aos-delay='50' data-aos-duration='1000'  className="group max-w-full sm:w-[48.5%] md:w-[31.8%] lg:w-[32.2%] relative z-[1]">
                         <figure>
                             <img className="rounded-[8px]" src={portfolio.imgUrl} alt=""/>
                         </figure>
@@ -53,7 +61,7 @@ const Portfolio = () => {
         </div>
 
         <div className="text-center mt-6">
-            <button className="text-white bg-headingColor hover:bg-smallTextColor py-2 px-4
+            <button onClick={loadMoreHandler} className="text-white bg-headingColor hover:bg-smallTextColor py-2 px-4
             rounded-[8px] font-[500] ease-in duration-200">
                 Load More
             </button>
