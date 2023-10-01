@@ -1,14 +1,22 @@
 import React, { useState, useEffect } from "react";
 import data from "../../assets/data/portfolioData";
+import Modal from './Modal'
 
 const Portfolio = () => {
   const [nextItems, setNextItems] = useState(6);
   const [portfolios, setPortfolios] = useState(data);
   const [selectTab, setSelectTab] = useState("all");
+  const [showModal, setShowModal] = useState(false)
+  const [activeID, setActiveID] = useState(null)
 
   const loadMoreHandler = () => {
     setNextItems((prev) => prev + 3);
   };
+
+  const showModalHandler = id => {
+    setShowModal(true)
+    setActiveID(id)
+  }
 
   useEffect(() => {
     if (selectTab === "all") {
@@ -86,6 +94,7 @@ const Portfolio = () => {
               >
                 <div className="w-full h-full flex items-center justify-center">
                   <button
+                    onClick={() => showModalHandler(portfolio.id)}
                     className="text-white bg-headingColor hover:bg-smallTextColor py-2 px-4
                                 rounded-[8px] font-[500] ease-in duration-200"
                   >
@@ -109,6 +118,9 @@ const Portfolio = () => {
           )}
         </div>
       </div>
+      {
+        showModal && <Modal setShowModal={setShowModal} activeID={activeID} />
+      }
     </section>
   );
 };
