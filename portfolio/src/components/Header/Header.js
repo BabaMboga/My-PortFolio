@@ -1,8 +1,25 @@
-import React from 'react'
+import React, {useRef, useEffect} from 'react'
 
 const Header = () => {
+
+  const headerRef = useRef(null)
+
+  const stickyHeaderFunc = () => {
+    window.addEventListener('scroll', () => {
+      if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80){
+        headerRef.current.classList.add('sticky_header')
+      } else {
+        headerRef.current.classList.remove('sticky_header')
+      }
+    })
+  }
+
+  useEffect(() => {
+
+  }, [])
+
   return (
-    <header className='w-full h-[80px] flex items-center'>
+    <header ref={headerRef} className='w-full h-[80px] flex items-center'>
       <div className='container'>
         <div className='flex items-center justify-between'>
           {/* ============== logo ============== */}
@@ -41,7 +58,7 @@ const Header = () => {
             <i class="ri-menu-line"></i>
             </span>
           </div>
-          {/* =========== menu end ===========  */}
+          {/* =========== menu end ===========  */} 
 
         </div>
       </div>
