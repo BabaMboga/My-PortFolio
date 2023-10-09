@@ -1,6 +1,9 @@
 import React from 'react'
 
 const Footer = () => {
+
+  const year = new Date().getFullYear()
+
   return (
     <footer className='bg-[#12141e] pt-12'>
       {/* ===================== footer top ===================== */}
@@ -73,6 +76,38 @@ const Footer = () => {
 
       </div>
       {/* ===================== footer top end ===================== */}
+      {/* ===================== footer bottom ===================== */}
+      <div className='bg-[#1b1e29] py-5 mt-14'>
+        <div className='container'>
+          <div className='flex items-center justify-center sm:justify-between'>
+            <div className='hidden sm:block'>
+              <div className='flex items-center gap-[10px]'>
+                <span className='w-[35px] h-[35px] rounded-full bg-[#2b2d33] text-white font-[500]
+                text-[18px] flex items-center justify-center'>
+                  AW
+                </span>
+
+                <div className='leading-[20px]'>
+                  <h2 className='text-gray-200 font-[500] text-[18px]'>
+                    Ayim William
+                  </h2>
+                  <p className='text-gray-400 text-[14px] font-[500]'>
+                    Personal
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <p className='text-gray-400 text-[14px]'>
+                Copyright {year} by Ayim - All rights reserved.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      {/* ===================== footer bottom end ===================== */}
     </footer>
   )
 }
