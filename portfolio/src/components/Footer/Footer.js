@@ -100,7 +100,7 @@ const Footer = () => {
 
             <div>
               <p className='text-gray-400 text-[14px]'>
-                Copyright {year} by Ayim - All rights reserved.
+                Copyright {year} developed by Ayim - All rights reserved.
               </p>
             </div>
 
