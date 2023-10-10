@@ -44,6 +44,8 @@ const Hero = () => {
                       1000,
                       "Database Expert",
                       1000,
+                      "DJANO & MERN Stack Dev",
+                      1000,
                       "Tech Geek",
                       1000,
                       "Chess Aficionado",
