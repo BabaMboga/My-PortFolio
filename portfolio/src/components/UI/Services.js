@@ -34,7 +34,7 @@ const Services = () => {
                       <div
                         data-aos="fade-right"
                         data-aos-duration="1200"
-                        className="bg-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer 
+                        className="bg-white p-4 rounded shadow group hover:bg-indigo-300 cursor-pointer 
                                         ease-in duration-150"
                       >
                         <h3
@@ -72,7 +72,7 @@ const Services = () => {
                         data-aos="fade-left"
                         data-aos-delay="50"
                         data-aos-duration="1300"
-                        className="bg-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer 
+                        className="bg-white p-4 rounded shadow group hover:bg-indigo-300 cursor-pointer 
                                         ease-in duration-150"
                       >
                         <h3
@@ -110,7 +110,7 @@ const Services = () => {
                         data-aos="fade-right"
                         data-aos-delay="100"
                         data-aos-duration="1400"
-                        className="bg-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer 
+                        className="bg-white p-4 rounded shadow group  hover:bg-indigo-300 cursor-pointer 
                                         ease-in duration-150"
                       >
                         <h3
@@ -148,7 +148,7 @@ const Services = () => {
                         data-aos="fade-left"
                         data-aos-delay="150"
                         data-aos-duration="1500"
-                        className="bg-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer 
+                        className="bg-white p-4 rounded shadow group  hover:bg-indigo-300 cursor-pointer 
                                         ease-in duration-150"
                       >
                         <h3
