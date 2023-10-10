@@ -1,4 +1,5 @@
 import React from "react";
+import Typical from "react-typical"
 import heroImg from "../../assets/images/hero-removebg.png";
 import CountUp from "react-countup";
 
@@ -24,7 +25,40 @@ const Hero = () => {
               className="text-headingColor font-[800]
                     text-[1.8rem] sm:text-[40px] leading-[35px] sm:leading-[46px] mt-5"
             >
-              I'm Ayim William <br /> Software Engineer
+              I'm Ayim William <br /> 
+              <div className="profile-details-role">
+                <span className="primary-text">
+                  {""}
+                  <h1>
+                    {""}
+                    <Typical
+                    loop={Infinity}
+                    steps={[
+                      "Software Engineer",
+                      1000,
+                      "Full-Stack Developer",
+                      1000,
+                      "Backend Ninja",
+                      1000,
+                      "DevOps Engineer",
+                      1000,
+                      "Database Expert",
+                      1000,
+                      "Tech Geek",
+                      1000,
+                      "Chess Aficionado",
+                      1000,
+                      "Film Buff",
+                      1000,
+                      "Sports & Fitness Enthusist",
+                      1000,
+                      "Philosophical Philanthropist",
+                      1000,
+                    ]}
+                    />
+                  </h1>
+                </span>
+              </div>Software Engineer
             </h1>
             <div
               data-aos="fade-up"
