@@ -6,10 +6,10 @@ import {useTypewriter, Cursor} from "react-simple-typewriter"
 const Hero = () => {
 
   const [text] = useTypewriter({
-    words: ["Software Engineer 👩‍💻", "Full-Stack Developer 💻", "Backend Ninja 🥋",
-      "DevOps Engineer 🛠️","Database Expert 📊","DJANO & MERN Stack Dev ⚛️",
+    words: ["Software Engineer 👩‍💻", "Full-Stack Developer 💻", "Back-end Ninja 🥋",
+      "Web Developer 🛠️","Database Expert 📊","Content Writer ✍️",
       "Tech Geek 🤓", "Chess Aficionado ♟️", "Film Buff 🎥", 
-      "Sports & Fitness Enthusiast 🏋️‍♂️", "Philosophical Philanthropist 🧘‍♂️"],
+      "Sports & Fitness Enthusiast 🏋️‍♂️", "Philosophical Altruist 🌍 🧘‍♂️"],
       loop: true,
       typespeed: 20,
       deleteSpeed: 10,
@@ -64,6 +64,12 @@ const Hero = () => {
                         border-smallTextColor"
               >
                 See portfolio
+              </a>
+              <a href="/Ayim-William-CV.pdf" download="Ayim-William-CV.pdf">
+                <button className="bg-primaryColor text-white font-[500] flex items-center gap-2
+                                  hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px]">
+                <i class="ri-shake-hands-line"></i> Get Resume
+                </button>
               </a>
             </div>
 
