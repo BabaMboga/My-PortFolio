@@ -6,10 +6,10 @@ import {useTypewriter, Cursor} from "react-simple-typewriter"
 const Hero = () => {
 
   const [text] = useTypewriter({
-    words: ["Software Engineer", "Full-Stack Developer", "Backend Ninja",
-      "DevOps Engineer","Database Expert","DJANO & MERN Stack Dev",
-      "Tech Geek", "Chess Aficionado", "Film Buff", 
-      "Sports & Fitness Enthusiast", "Philosophical Philanthropist"],
+    words: ["Software Engineer 👩‍💻", "Full-Stack Developer 💻", "Backend Ninja 🥋",
+      "DevOps Engineer 🛠️","Database Expert 📊","DJANO & MERN Stack Dev ⚛️",
+      "Tech Geek 🤓", "Chess Aficionado ♟️", "Film Buff 🎥", 
+      "Sports & Fitness Enthusiast 🏋️‍♂️", "Philosophical Philanthropist 🧘‍♂️"],
       loop: true,
       typespeed: 20,
       deleteSpeed: 10,
