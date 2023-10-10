@@ -1,8 +1,21 @@
 import React from "react";
 import heroImg from "../../assets/images/hero-removebg.png";
 import CountUp from "react-countup";
+import {useTypewriter, Cursor} from "react-simple-typewriter"
 
 const Hero = () => {
+
+  const [text] = useTypewriter({
+    words: ["Software Engineer 👩‍💻", "Full-Stack Developer 💻", "Backend Ninja 🥋",
+      "DevOps Engineer 🛠️","Database Expert 📊","DJANO & MERN Stack Dev ⚛️",
+      "Tech Geek 🤓", "Chess Aficionado ♟️", "Film Buff 🎥", 
+      "Sports & Fitness Enthusiast 🏋️‍♂️", "Philosophical Philanthropist 🧘‍♂️"],
+      loop: true,
+      typespeed: 20,
+      deleteSpeed: 10,
+      delaySpeed: 1000,
+  });
+
   return (
     <section className="pt-0" id="about">
       <div className="container pt-14">
@@ -24,7 +37,12 @@ const Hero = () => {
               className="text-headingColor font-[800]
                     text-[1.8rem] sm:text-[40px] leading-[35px] sm:leading-[46px] mt-5"
             >
-              I'm Ayim William <br /> Software Engineer
+              I'm Ayim William <br /> <span>{text}</span>
+              <Cursor 
+              cursorBlinking="false"
+              cursorStyle="|"
+              cursorColor="#8873ef"
+              />
             </h1>
             <div
               data-aos="fade-up"
