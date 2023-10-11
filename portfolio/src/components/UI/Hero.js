@@ -32,6 +32,32 @@ const Hero = () => {
       delaySpeed: 1000,
   });
 
+  // Create an array of icon elements
+  const slideShowIcons = [
+    <img src={cssImg} alt="CSS" />,
+    <img src={htmlImg} alt="HTML" />,
+    <img src={flaskImg} alt="Flask" />,
+    <img src={javascriptImg} alt="JavaScript" />,
+    <img src={reactImg} alt="React" />,
+    <img src={tailwindCssImg} alt="Tailwind CSS" />,
+    <img src={javaImg} alt="Java" />,
+    <img src={jsImg} alt="JS" />,
+    <img src={pythonImg} alt="Python" />,
+    <img src={reactImg2} alt="React" />,
+    <img src={sqlImg} alt="SQL" />,
+  ];
+
+  // Settings for slider component set
+  const sliderSettings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  }
+
   return (
     <section className="pt-0" id="about">
       <div className="container pt-14">
