@@ -1,7 +1,23 @@
 import React from "react";
 import heroImg from "../../assets/images/hero-removebg.png";
 import CountUp from "react-countup";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import {useTypewriter, Cursor} from "react-simple-typewriter"
+import cssImg from "../../assets/images/project-icons/css-3.png"
+import htmlImg from "../../assets/images/project-icons/html-5.png"
+import flaskImg from "../../assets/images/project-icons/icons8-flask.svg"
+import javascriptImg from "../../assets/images/project-icons/icons8-javascript.svg"
+import reactImg from "../../assets/images/project-icons/icons8-react.svg"
+import tailwindCssImg from "../../assets/images/project-icons/icons8-tailwindcss.svg"
+import javaImg from "../../assets/images/project-icons/java.png"
+import jsImg from "../../assets/images/project-icons/js.png"
+import pythonImg from "../../assets/images/project-icons/python.png"
+import reactImg2 from "../../assets/images/project-icons/react.png"
+import sqlImg from "../../assets/images/project-icons/sql-server.png"
+
+
 
 const Hero = () => {
 
