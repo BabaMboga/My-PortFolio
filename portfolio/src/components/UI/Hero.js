@@ -1,7 +1,21 @@
 import React from "react";
 import heroImg from "../../assets/images/hero-removebg.png";
 import CountUp from "react-countup";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import {useTypewriter, Cursor} from "react-simple-typewriter"
+import cssImg from "../../assets/images/project-icons/css-3.png"
+import htmlImg from "../../assets/images/project-icons/html-5.png"
+import flaskImg from "../../assets/images/project-icons/icons8-flask.svg"
+import javascriptImg from "../../assets/images/project-icons/icons8-javascript.svg"
+import reactImg from "../../assets/images/project-icons/icons8-react.svg"
+import tailwindCssImg from "../../assets/images/project-icons/icons8-tailwindcss.svg"
+import javaImg from "../../assets/images/project-icons/java.png"
+import jsImg from "../../assets/images/project-icons/js.png"
+import pythonImg from "../../assets/images/project-icons/python.png"
+import reactImg2 from "../../assets/images/project-icons/react.png"
+import sqlImg from "../../assets/images/project-icons/sql-server.png"
 
 const Hero = () => {
 
@@ -15,6 +29,32 @@ const Hero = () => {
       deleteSpeed: 10,
       delaySpeed: 1000,
   });
+
+  // Create an array of icon elements
+  const slideShowIcons = [
+    <img src={cssImg} alt="CSS" />,
+    <img src={htmlImg} alt="HTML" />,
+    <img src={flaskImg} alt="Flask" />,
+    <img src={javascriptImg} alt="JavaScript" />,
+    <img src={reactImg} alt="React" />,
+    <img src={tailwindCssImg} alt="Tailwind CSS" />,
+    <img src={javaImg} alt="Java" />,
+    <img src={jsImg} alt="JS" />,
+    <img src={pythonImg} alt="Python" />,
+    <img src={reactImg2} alt="React" />,
+    <img src={sqlImg} alt="SQL" />,
+  ];
+
+  // Settings for slider component set
+  const sliderSettings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  }
 
   return (
     <section className="pt-0" id="about">
@@ -76,7 +116,7 @@ const Hero = () => {
             <p
               data-aos="fade-left"
               data-aos-duration="1500"
-              className="flex gap-2 text-headingColor mt-12 font-[500] text-[15px] leading-7 sm:pl-14 sm:pr-10"
+              className="flex gap-1 text-headingColor mt-12 font-[500] text-[15px] leading-7 sm:pl-14 sm:pr-10"
             >
               <span>
                 <i class="ri-apps-line"></i>
