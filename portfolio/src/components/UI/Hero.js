@@ -127,6 +127,18 @@ const Hero = () => {
               engineer with comprehensive training in a wide array of cutting
               edge technologies. My skill set includes proficiency in:
             </p>
+
+            {/* Slider for icons */}
+
+            <Slider {...sliderSettings} className= "flex items-center gap-1 mt-10 w-[22%] h-8 leading-7  ">
+              {slideShowIcons.map((icon, index) => (
+                <div key={index} className="icon-slide p-4">
+                  {icon}
+                </div>
+              ))}
+            </Slider>
+
+
             <div className="flex items-center gap-9 mt-14">
               <span className=" text-smallTextColor text-[15px] font-[600]">
                 Follow me:
