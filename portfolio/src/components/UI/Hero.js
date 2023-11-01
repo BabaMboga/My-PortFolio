@@ -16,6 +16,34 @@ const Hero = () => {
       delaySpeed: 1000,
   });
 
+  // Create an array of icon elements
+  const slideShowIcons = [
+    <img src={cssImg} alt="CSS" />,
+    <img src={htmlImg} alt="HTML" />,
+    <img src={flaskImg} alt="Flask" />,
+    <img src={javascriptImg} alt="JavaScript" />,
+    <img src={reactImg} alt="React" />,
+    <img src={tailwindCssImg} alt="Tailwind CSS" />,
+    <img src={javaImg} alt="Java" />,
+    <img src={jsImg} alt="JS" />,
+    <img src={pythonImg} alt="Python" />,
+    <img src={reactImg2} alt="React" />,
+    <img src={sqlImg} alt="SQL" />,
+  ];
+
+  // Settings for slider component set
+  const sliderSettings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    // nextArrow: <nextArrow />
+
+  }
+
   return (
     <section className="pt-0" id="about">
       <div className="container pt-14">
@@ -70,7 +98,7 @@ const Hero = () => {
             <p
               data-aos="fade-left"
               data-aos-duration="1500"
-              className="flex gap-2 text-headingColor mt-12 font-[500] text-[15px] leading-7 sm:pl-14 sm:pr-10"
+              className="flex gap-3 text-headingColor mt-12 font-[500] text-[15px] leading-7 sm:pl-14 sm:pr-10"
             >
               <span>
                 <i class="ri-apps-line"></i>
@@ -79,6 +107,16 @@ const Hero = () => {
               engineer with comprehensive training in a wide array of cutting
               edge technologies. My skill set includes proficiency in:
             </p>
+
+            {/* slider for icons */}
+
+            <Slider {...sliderSettings} className="w-14" >
+              {slideShowIcons.map((icon, index) => (
+                <div key={index} className="icon-slide p-20">
+                  {icon}
+                </div>
+              ))}
+            </Slider>
             <div className="flex items-center gap-9 mt-14">
               <span className=" text-smallTextColor text-[15px] font-[600]">
                 Follow me:
@@ -121,7 +159,7 @@ const Hero = () => {
           {/* ============ hero img ============ */}
           <div className="basis-1/3 mt-10 sm:mt-0 ">
             <figure className="flex items-center justify-center">
-              <img src={heroImg} alt="" className="rounded-[8px]" />
+              <img src={heroImg} alt="" className="rounded-[8px] h-15 w-22% pl-10 pr-10" />
             </figure>
           </div>
           {/* ============ hero img end ============ */}
