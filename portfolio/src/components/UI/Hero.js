@@ -1,7 +1,20 @@
 import React from "react";
 import heroImg from "../../assets/images/hero-removebg.png";
 import CountUp from "react-countup";
-import {useTypewriter, Cursor} from "react-simple-typewriter"
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import {Carousel} from "react-responsive-carousel";
+import {useTypewriter, Cursor} from "react-simple-typewriter";
+import cssImg from "../../assets/images/project-icons/css-3.png";
+import htmlImg from "../../assets/images/project-icons/html-5.png";
+import flaskImg from "../../assets/images/project-icons/icons8-flask.svg";
+import javascriptImg from "../../assets/images/project-icons/icons8-javascript.svg";
+import reactImg from "../../assets/images/project-icons/icons8-react.svg";
+import tailwindCssImg from "../../assets/images/project-icons/icons8-tailwindcss.svg";
+import javaImg from "../../assets/images/project-icons/java.png";
+import jsImg from "../../assets/images/project-icons/js.png";
+import pythonImg from "../../assets/images/project-icons/python.png";
+import reactImg2 from "../../assets/images/project-icons/react.png";
+import sqlImg from "../../assets/images/project-icons/sql-server.png";
 
 const Hero = () => {
 
@@ -15,6 +28,19 @@ const Hero = () => {
       deleteSpeed: 10,
       delaySpeed: 1000,
   });
+
+  const slideShowIcons = [
+    cssImg,
+    htmlImg, 
+    flaskImg,
+    javascriptImg,
+    reactImg, 
+    tailwindCssImg, 
+    javaImg,
+    jsImg,
+    pythonImg,
+    reactImg2,sqlImg
+  ];
 
   return (
     <section className="pt-0" id="about">
@@ -76,7 +102,7 @@ const Hero = () => {
             <p
               data-aos="fade-left"
               data-aos-duration="1500"
-              className="flex gap-2 text-headingColor mt-12 font-[500] text-[15px] leading-7 sm:pl-14 sm:pr-10"
+              className="flex gap-1 text-headingColor mt-4 font-[500] text-[15px] leading-7  sm:pl-14 sm:pr-10"
             >
               <span>
                 <i class="ri-apps-line"></i>
@@ -84,8 +110,23 @@ const Hero = () => {
               I am a passionate and highly motivated full stack software
               engineer with comprehensive training in a wide array of cutting
               edge technologies. My skill set includes proficiency in:
+              
             </p>
-            <div className="flex items-center gap-9 mt-14">
+
+            <div className=" px-20 ml-[80px] mt-4 w-[60%] ">
+            <Carousel showThumbs={false} dynamicHeight={true} className="">
+              {slideShowIcons.map((icon, index) => (
+                <div key={index} className="icon_slide">
+                  <img src={icon} alt={`Icon ${index}`} />
+                </div>
+              ))}
+            </Carousel>
+
+            </div>
+
+            
+
+            {/* <div className="flex items-center gap-9 mt-14">
               <span className=" text-smallTextColor text-[15px] font-[600]">
                 Follow me:
               </span>
@@ -121,7 +162,7 @@ const Hero = () => {
                   <i class="ri-wordpress-fill"></i>
                 </a>
               </span>
-            </div>
+            </div> */}
           </div>
           {/* ============ hero left end ============ */}
           {/* ============ hero img ============ */}
