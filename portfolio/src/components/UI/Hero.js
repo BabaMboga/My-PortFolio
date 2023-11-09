@@ -113,7 +113,10 @@ const Hero = () => {
               
             </p>
 
-            <div className=" px-20 ml-[80px] mt-4 w-[60%] ">
+            <div 
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                className=" px-20 ml-[80px] mt-4 w-[60%] ">
             <Carousel showThumbs={false} dynamicHeight={true} className="">
               {slideShowIcons.map((icon, index) => (
                 <div key={index} className="icon_slide">
