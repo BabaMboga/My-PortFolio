@@ -13,10 +13,10 @@ const Services = () => {
             What do I help
           </h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, uis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            As a versatile software engineer, I offer a range of services to address your unique technology needs. 
+            My expertise covers various aspects of software development, with particular specialisation in backend logic and server-side solutions.
+            I work to ensure the seamless functionality and performance of your applications.
+
           </p>
         </div>
 
@@ -44,9 +44,7 @@ const Services = () => {
                           Frontend Development
                         </h3>
                         <p className="text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[500] leading-7">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Consequartur, ad quas excepturi eius optio
-                          voluptatum.
+                          Craft visually appealing and interactive user interfaces to enhance the overall user experience.
                         </p>
                       </div>
                     </div>
@@ -82,9 +80,7 @@ const Services = () => {
                           UI/UX Design
                         </h3>
                         <p className="text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[500] leading-7">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Consequartur, ad quas excepturi eius optio
-                          voluptatum.
+                          Create intuitive and user-centric design solutions to optimize user interactions.
                         </p>
                       </div>
                     </div>
@@ -120,9 +116,7 @@ const Services = () => {
                           Backend Development
                         </h3>
                         <p className="text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[500] leading-7">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Consequartur, ad quas excepturi eius optio
-                          voluptatum.
+                          Build robust server-side solutions to ensure seamless functionality and performance.
                         </p>
                       </div>
                     </div>
@@ -158,9 +152,7 @@ const Services = () => {
                           Apps Development
                         </h3>
                         <p className="text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[500] leading-7">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Consequartur, ad quas excepturi eius optio
-                          voluptatum.
+                          Develop innovative solutions to meet the demans of a dynamic and ever-evolving digital landscape.
                         </p>
                       </div>
                     </div>
