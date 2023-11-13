@@ -130,7 +130,9 @@ const Hero = () => {
 
             {/* Slider for icons */}
 
-            <Slider {...sliderSettings} className= "flex items-center gap-1 mt-10 w-[22%] h-8 leading-7  ">
+            <div className="px-20 w-[60%]">
+
+            <Slider {...sliderSettings} className= " ">
               {slideShowIcons.map((icon, index) => (
                 <div key={index} className="icon-slide p-4">
                   {icon}
@@ -138,8 +140,10 @@ const Hero = () => {
               ))}
             </Slider>
 
+            </div>
 
-            <div className="flex items-center gap-9 mt-14">
+
+            {/* <div className="flex items-center gap-9 mt-14">
               <span className=" text-smallTextColor text-[15px] font-[600]">
                 Follow me:
               </span>
@@ -175,7 +179,7 @@ const Hero = () => {
                   <i class="ri-wordpress-fill"></i>
                 </a>
               </span>
-            </div>
+            </div> */}
           </div>
           {/* ============ hero left end ============ */}
           {/* ============ hero img ============ */}
