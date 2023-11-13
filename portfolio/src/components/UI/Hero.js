@@ -50,7 +50,7 @@ const Hero = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow:3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
@@ -123,9 +123,21 @@ const Hero = () => {
               </span>
               I am a passionate and highly motivated full stack software
               engineer with comprehensive training in a wide array of cutting
-              edge technologies. My skill set includes proficiency in:
+              edge technologies such as:
             </p>
-            <div className="flex items-center gap-9 mt-14">
+
+            <div className="">
+
+            <Slider {...sliderSettings} className= " flex items-center px-20 w-[40%] h-[40%] mt-4 mr-15 ">
+              {slideShowIcons.map((icon, index) => (
+                <div key={index} className="icon-slide">
+                  {icon}
+                </div>
+              ))}
+            </Slider>
+            </div>
+
+            {/* <div className="flex items-center gap-9 mt-14">
               <span className=" text-smallTextColor text-[15px] font-[600]">
                 Follow me:
               </span>
@@ -161,7 +173,7 @@ const Hero = () => {
                   <i class="ri-wordpress-fill"></i>
                 </a>
               </span>
-            </div>
+            </div> */}
           </div>
           {/* ============ hero left end ============ */}
           {/* ============ hero img ============ */}
