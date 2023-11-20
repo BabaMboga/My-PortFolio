@@ -38,6 +38,26 @@ section {
     z-index: 99;
 }
 
+/* Additional css for the carousel */
+.slick-slider{
+    width: 40%;
+    margin: 0 auto;
+}
+
+.icon-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-dots{
+    bottom: 10px;
+}
+
+.slick-dots li button:before{
+    color: #8873ef
+}
+
 @media only screen and (max-width: 768px){
     .menu {
         width: 100%;
