@@ -152,7 +152,7 @@ const Services = () => {
                           Apps Development
                         </h3>
                         <p className="text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[500] leading-7">
-                          Develop innovative solutions to meet the demans of a dynamic and ever-evolving digital landscape.
+                          Develop innovative solutions to meet the demands of a dynamic and ever-evolving digital landscape.
                         </p>
                       </div>
                     </div>
