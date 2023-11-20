@@ -59,19 +59,19 @@ const Portfolio = () => {
               className="text-smallTextColor border border-solid border-smallTextColor
             py-2 px-4 rounded-[8px]"
             >
-              Web Design
+              Simple
             </button>
             <button
               onClick={() => setSelectTab("ux-design")}
               className="text-smallTextColor border border-solid border-smallTextColor
             py-2 px-4 rounded-[8px]"
             >
-              UX Design
+              Intermediate
             </button>
-            {/* <button className="text-smallTextColor border border-solid border-smallTextColor
+            <button className="text-smallTextColor border border-solid border-smallTextColor
             py-2 px-4 rounded-[8px]">
                 Capstone
-            </button> */}
+            </button>
           </div>
         </div>
 
