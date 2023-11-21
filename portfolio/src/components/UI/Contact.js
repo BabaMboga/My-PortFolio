@@ -100,6 +100,7 @@ const Contact = () => {
                   type="text"
                   name="subject"
                   value={formData.subject}
+                  onChange={handleChange}
                   placeholder="Subject"
                   className="w-full p-3 focus:outline-none rounded-[5px]"
                 />
@@ -107,13 +108,16 @@ const Contact = () => {
               <div className="mb-5">
                 <textarea
                   type="text"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
                   rows={5}
                   placeholder="Write your message"
                   className="w-full p-3 focus:outline-none rounded-[5px]"
                 />
               </div>
 
-              <button className="w-full p-3 focus:outline-none rounded-[5px] bg-smallTextColor text-white
+              <button type="submit" className="w-full p-3 focus:outline-none rounded-[5px] bg-smallTextColor text-white
               hover:bg-headingColor text-center ease-linear duration-150">
                 Send Message
                 </button>
