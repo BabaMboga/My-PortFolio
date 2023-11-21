@@ -17,7 +17,7 @@ const Contact = () => {
     e.preventDefault();
   
     try{
-      const apiKey = "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";
+      const apiKey = "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";
       const apiUrl = "https://api.sendgrid.com/v3/mail/send";
   
       const response = await axios.post(
