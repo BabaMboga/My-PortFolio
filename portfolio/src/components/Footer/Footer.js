@@ -39,7 +39,7 @@ const Footer = () => {
                text-center"
               >
                 <a
-                  href="#github"
+                  href="https://github.com/BabaMboga"
                   className="text-gray-300 font-[500] text-[18px]"
                 >
                   <i class="ri-github-line"></i>
@@ -50,7 +50,7 @@ const Footer = () => {
                text-center"
               >
                 <a
-                  href="#twitter"
+                  href="https://twitter.com/baba_mboga"
                   className="text-gray-300 font-[500] text-[18px]"
                 >
                   <i class="ri-twitter-x-fill"></i>
@@ -61,7 +61,7 @@ const Footer = () => {
                text-center"
               >
                 <a
-                  href="#linkedin"
+                  href="https://www.linkedin.com/in/ayim-william/"
                   className="text-gray-300 font-[500] text-[18px]"
                 >
                   <i class="ri-linkedin-box-line"></i>
@@ -72,7 +72,7 @@ const Footer = () => {
                text-center"
               >
                 <a
-                  href="#facebook"
+                  href="https://www.facebook.com/babamboga/"
                   className="text-gray-300 font-[500] text-[18px]"
                 >
                   <i class="ri-facebook-box-line"></i>
@@ -83,7 +83,7 @@ const Footer = () => {
                text-center"
               >
                 <a
-                  href="#wordpress"
+                  href="https://babamboga.wordpress.com/"
                   className="text-gray-300 font-[500] text-[18px]"
                 >
                   <i class="ri-wordpress-fill"></i>
