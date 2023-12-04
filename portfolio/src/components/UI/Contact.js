@@ -9,6 +9,7 @@ const Contact = () => {
     message: '',
   });
 
+
   const handleChange = (e) => {
     const { name, value} = e.target;
     setFormData({ ...formData, [name]: value});
@@ -30,6 +31,14 @@ const Contact = () => {
       if (response.ok) {
         console.log('Email sent successfully!');
         // add client side success handling here
+
+        // clear the form fields after successful submission
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: '',
+        });
       } else {
         console.error('Failed to send email');
         // add any client-side error handling here
