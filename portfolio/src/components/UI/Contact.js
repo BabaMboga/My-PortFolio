@@ -61,7 +61,7 @@ const Contact = () => {
             className="w-full mt-8 md:mt-0 md:w-1/2 sm:h-[450px] lg:flex items-center bg-indigo-100 
             px-4 lg:px-8 py-8 pl-7"
           >
-            <form className="w-full">
+            <form className="w-full" onSubmity={handleSubmit}>
               <div className="mb-5">
                 <input
                   type="text"
@@ -92,7 +92,7 @@ const Contact = () => {
                 />
               </div>
 
-              <button className="w-full p-3 focus:outline-none rounded-[5px] bg-smallTextColor text-white
+              <button type="submit" className="w-full p-3 focus:outline-none rounded-[5px] bg-smallTextColor text-white
               hover:bg-headingColor text-center ease-linear duration-150">
                 Send Message
                 </button>
