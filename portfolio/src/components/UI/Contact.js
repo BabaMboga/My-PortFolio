@@ -1,6 +1,44 @@
-import React from "react";
+import { response } from "express";
+import React, {useState} from "react";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+  });
+
+  const handleChange = (e) => {
+    const { name, value} = e.target;
+    setFormData({ ...formData, [name]: value});
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try{
+      const reponse = await fetch('http://localhost:3001/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type' : 'application/json',
+
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        console.log('Email sent successfully!');
+        // add client side success handling here
+      } else {
+        console.error('Failed to send email');
+        // add any client-side error handling here
+      }
+    } catch (error) {
+      console.error('Error sending email', error);
+    }
+  };
+  
   return (
     <section id="contact" className="pb-16">
       <div className="container">
