@@ -23,5 +23,23 @@ app.post('/send-email', (req, res) => {
     const mailOptions = {
         from: 'your-email@gmail.com', // sender address
         to: 'odhisayim@gmail.com', // recipient address
-    }
-})
+        subject: subject,
+        text: 'Name: ${name}\nEmail: ${email}\nMessage: ${message}',
+    };
+
+    // Send email
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            console.error(error);
+            res.status(500).send('Internal Server Error');
+
+        } else {
+            console.log('Email sent: ' + info.response);
+            res.status(200).send('Email Sent');
+        }
+    });
+});
+
+app.listen(port, () => {
+    console.log('Server is running on port ${port}');
+});
