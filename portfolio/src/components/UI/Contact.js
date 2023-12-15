@@ -1,4 +1,3 @@
-import { response } from "express";
 import React, {useState} from "react";
 
 const Contact = () => {
@@ -9,6 +8,8 @@ const Contact = () => {
     message: '',
   });
 
+  const [successMessage, setSuccessMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleChange = (e) => {
     const { name, value} = e.target;
@@ -19,7 +20,7 @@ const Contact = () => {
     e.preventDefault();
 
     try{
-      const reponse = await fetch('http://localhost:3001/send-email', {
+      const response = await fetch('http://localhost:3001/send-email', {
         method: 'POST',
         headers: {
           'Content-Type' : 'application/json',
@@ -29,7 +30,8 @@ const Contact = () => {
       });
 
       if (response.ok) {
-        console.log('Email sent successfully!');
+        setSuccessMessage("Email sent successfully!");
+        setErrorMessage(""); // 
         // add client side success handling here
 
         // clear the form fields after successful submission
@@ -40,11 +42,16 @@ const Contact = () => {
           message: '',
         });
       } else {
-        console.error('Failed to send email');
+        setErrorMessage("Failed to send email");
+        // console.error('Failed to send email');
+        setSuccessMessage("");
         // add any client-side error handling here
       }
     } catch (error) {
-      console.error('Error sending email', error);
+      // error during the fetch or network issue
+      setErrorMessage("Error sending email");
+      // console.error('Error sending email', error);
+      setSuccessMessage("");
     }
   };
   
@@ -54,6 +61,12 @@ const Contact = () => {
         <h2 className="text-headingColor font-[700] text-[2.5rem] mb-8">
           Get in touch
         </h2>
+        {successMessage && (
+          <div className="text-green-500 mb-4">{successMessage}</div>
+        )}
+        {errorMessage && (
+          <div className="text-red-500 mb-4">{errorMessage}</div>
+        )}
         <div className="md:flex justify-between items-center">
           <div className="w-full md:w-1/2 h-[300px] sm:h-[450px]">
             <iframe
@@ -70,7 +83,7 @@ const Contact = () => {
             className="w-full mt-8 md:mt-0 md:w-1/2 sm:h-[450px] lg:flex items-center bg-indigo-100 
             px-4 lg:px-8 py-8 pl-7"
           >
-            <form className="w-full" onSubmity={handleSubmit}>
+            <form className="w-full" onSubmit={handleSubmit}>
               <div className="mb-5">
                 <input
                   type="text"
