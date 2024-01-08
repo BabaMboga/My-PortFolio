@@ -9,7 +9,7 @@ const Hero = () => {
     words: ["Software Engineer 👩‍💻", "Full-Stack Developer 💻", "Back-end Ninja 🥋",
       "Web Developer 🛠️","Database Expert 📊","Content Writer ✍️",
       "Tech Geek 🤓", "Chess Aficionado ♟️", "Film Buff 🎥", 
-      "Sports & Fitness Enthusiast 🏋️‍♂️", "Philosophical Altruist 🌍 🧘‍♂️"],
+      "Sports Enthusiast 🏋️‍♂️", "Philosophical Altruist 🌍 🧘‍♂️"],
       loop: true,
       typespeed: 20,
       deleteSpeed: 10,
