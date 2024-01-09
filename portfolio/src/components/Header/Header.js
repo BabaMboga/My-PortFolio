@@ -1,15 +1,18 @@
 import React, { useRef, useEffect } from "react";
 
-const Header = () => {
+const Header = ({showHeader}) => {
   const headerRef = useRef(null);
   const menuRef = useRef(null);
 
   const stickyHeaderFunc = () => {
+
+    if (!showHeader) return; // Do nothing if showHeadaer is false
+
     window.addEventListener("scroll", () => {
-      if (
-        document.body.scrollTop > 80 ||
-        document.documentElement.scrollTop > 80
-      ) {
+
+      const shouldSticky = window.scrollY > 80;
+
+      if (shouldSticky){
         headerRef.current.classList.add("sticky_header");
       } else {
         headerRef.current.classList.remove("sticky_header");
@@ -20,8 +23,10 @@ const Header = () => {
   useEffect(() => {
     stickyHeaderFunc();
 
-    return window.removeEventListener("scroll", stickyHeaderFunc);
-  }, []);
+    return () => { 
+      window.removeEventListener("scroll", stickyHeaderFunc);
+        };
+}, []);
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -61,25 +66,25 @@ const Header = () => {
           </div>
           {/* =========== logo end ===========  */}
           {/* =========== menu start ===========  */}
-          <div className="menu" ref={menuRef} onclick={toggleMenu}>
+          <div className="menu" ref={menuRef} onClick={toggleMenu}>
             <ul className="flex items-center gap-10">
               <li>
-                <a onclick={handleClick} className="text-smallTextColor font-[600]" href="#about">
+                <a onClick={handleClick} className="text-smallTextColor font-[600]" href="#about">
                   About
                 </a>
               </li>
               <li>
-                <a onclick={handleClick} className="text-smallTextColor font-[600]" href="#services">
+                <a onClick={handleClick} className="text-smallTextColor font-[600]" href="#services">
                   Services
                 </a>
               </li>
               <li>
-                <a onclick={handleClick} className="text-smallTextColor font-[600]" href="#portfolio">
+                <a onClick={handleClick} className="text-smallTextColor font-[600]" href="#portfolio">
                   Portfolio
                 </a>
               </li>
               <li>
-                <a onclick={handleClick} className="text-smallTextColor font-[600]" href="#contact">
+                <a onClick={handleClick} className="text-smallTextColor font-[600]" href="#contact">
                   Contact
                 </a>
               </li>

@@ -18,11 +18,11 @@ function App() {
   }, []);
   return (
     <>
-      {showHeader && <Header />}
+      <Header showHeader={showHeader} />
       <main>
         <Hero />
         <Services />
-        <Portfolio setShowHeader={setShowHeader} />
+        <Portfolio showHeader={showHeader} setShowHeader={setShowHeader} />
         <Contact />
       </main>
       <Footer />

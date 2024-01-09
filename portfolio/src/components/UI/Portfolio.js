@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import data from "../../assets/data/portfolioData";
 import Modal from './Modal'
 
-const Portfolio = ({setShowHeader}) => {
+const Portfolio = ({showHeader, setShowHeader}) => {
   const [nextItems, setNextItems] = useState(6);
   const [portfolios, setPortfolios] = useState(data);
   const [selectTab, setSelectTab] = useState("all");
@@ -36,6 +36,13 @@ const Portfolio = ({setShowHeader}) => {
       setPortfolios(filteredData);
     }
   }, [selectTab]);
+
+  useEffect(() => {
+    // Reset the header visibility when the modal is closed
+    return () => {
+      setShowHeader(true);
+    };
+  }, [setShowHeader])
 
   return (
     <section id="portfolio">
