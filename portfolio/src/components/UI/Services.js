@@ -20,6 +20,7 @@ import sqlImg from "../../assets/images/project-icons/sql-server.png"
 
 const Services = () => {
 
+  // Create an array of icon elements
   const slideShowIcons = [
     <img src={cssImg} alt="CSS" />,
     <img src={htmlImg} alt="HTML" />,
@@ -34,6 +35,7 @@ const Services = () => {
     <img src={sqlImg} alt="SQL" />,
   ];
 
+  // Settings for slider component set
   const sliderSettings = {
     dots: false,
     infinite: true,
@@ -51,13 +53,13 @@ const Services = () => {
           <h2 className="text-headingColor font-[800] text-[2.4 rem] mb-5">
             What do I help
           </h2>
-          {/* <p>
+          <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, uis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
-          </p> */}
-          <Slider {...sliderSettings} className= " flex items-center px-20 w-[50%] h-[40%] mt-4 mr-15 ">
+          </p>
+          <Slider {...sliderSettings} className= " flex items-center px-20 w-[50%] h-[40%] mt-4 mr-15 pt-5 ">
               {slideShowIcons.map((icon, index) => (
                 <div key={index} className="icon-slide">
                   {icon}
@@ -201,7 +203,7 @@ const Services = () => {
                           className="text-primaryColor font-[700] mb-3 group-hover:text-white
                                             group-hover:font-[600] text-xl"
                         >
-                          Apps Development
+                          Agile Methodology
                         </h3>
                         <p className="text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[500] leading-7">
                           Lorem ipsum dolor sit amet consectetur adipisicing
