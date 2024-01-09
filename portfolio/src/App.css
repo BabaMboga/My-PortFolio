@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-    max-width: 1170px;
+    max-width: 1080px;
     padding-left: 20px;
     padding-right: 20px;
     margin: auto;
@@ -36,6 +36,26 @@ section {
     background: #fff;
     box-shadow: 3px 3px -8px 3px #ddd;
     z-index: 99;
+}
+
+/* Additional css for the carousel */
+.slick-slider{
+    width: 40%;
+    margin: 0 auto;
+}
+
+.icon-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-dots{
+    bottom: 10px;
+}
+
+.slick-dots li button:before{
+    color: #8873ef
 }
 
 @media only screen and (max-width: 768px){

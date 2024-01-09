@@ -1,19 +1,27 @@
 import React from "react";
 import heroImg from "../../assets/images/hero-removebg.png";
 import CountUp from "react-countup";
-import {useTypewriter, Cursor} from "react-simple-typewriter"
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const Hero = () => {
-
   const [text] = useTypewriter({
-    words: ["Software Engineer 👩‍💻", "Full-Stack Developer 💻", "Back-end Ninja 🥋",
-      "Web Developer 🛠️","Database Expert 📊","Content Writer ✍️",
-      "Tech Geek 🤓", "Chess Aficionado ♟️", "Film Buff 🎥", 
-      "Sports Enthusiast 🏋️‍♂️", "Philosophical Altruist 🌍 🧘‍♂️"],
-      loop: true,
-      typespeed: 20,
-      deleteSpeed: 10,
-      delaySpeed: 1000,
+    words: [
+      "Software Engineer 👩‍💻",
+      "Full-Stack Developer 💻",
+      "Back-end Ninja 🥋",
+      "Web Developer 🛠️",
+      "Database Expert 📊",
+      "Content Writer ✍️",
+      "Tech Geek 🤓",
+      "Chess Aficionado ♟️",
+      "Film Buff 🎥",
+      "Sports & Fitness Maven 🏋️‍♂️",
+      "Noble Altruist 🌍 🧘‍♂️",
+    ],
+    loop: true,
+    typespeed: 20,
+    deleteSpeed: 10,
+    delaySpeed: 1000,
   });
 
   return (
@@ -38,10 +46,10 @@ const Hero = () => {
                     text-[1.8rem] sm:text-[40px] leading-[35px] sm:leading-[46px] mt-5"
             >
               I'm Ayim William <br /> <span>{text}</span>
-              <Cursor 
-              cursorBlinking="false"
-              cursorStyle="|"
-              cursorColor="#8873ef"
+              <Cursor
+                cursorBlinking="false"
+                cursorStyle="|"
+                cursorColor="#8873ef"
               />
             </h1>
             <div
@@ -66,9 +74,11 @@ const Hero = () => {
                 See portfolio
               </a>
               <a href="/Ayim-William-CV.pdf" download="Ayim-William-CV.pdf">
-                <button className="bg-primaryColor text-white font-[500] flex items-center gap-2
-                                  hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px]">
-                <i class="ri-shake-hands-line"></i> Get Resume
+                <button
+                  className="bg-primaryColor text-white font-[500] flex items-center gap-2
+                                  hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px]"
+                >
+                  <i class="ri-shake-hands-line"></i> Get Resume
                 </button>
               </a>
             </div>
@@ -76,22 +86,27 @@ const Hero = () => {
             <p
               data-aos="fade-left"
               data-aos-duration="1500"
-              className="flex gap-2 text-headingColor mt-12 font-[500] text-[15px] leading-7 sm:pl-14 sm:pr-10"
+              className="flex gap-1 text-headingColor mt-12 font-[500] text-[15px] leading-7 sm:pl-14 sm:pr-10"
             >
               <span>
                 <i class="ri-apps-line"></i>
               </span>
               I am a passionate and highly motivated full stack software
               engineer with comprehensive training in a wide array of cutting
-              edge technologies. My skill set includes proficiency in:
+              edge technologies such as:
             </p>
+
+            <div className=""></div>
+
             <div className="flex items-center gap-9 mt-14">
               <span className=" text-smallTextColor text-[15px] font-[600]">
                 Follow me:
               </span>
               <span>
                 <a
-                  href="#linkedin"
+                  href="https://www.linkedin.com/in/ayim-william/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-smallTextColor text-[18px] font-[600]"
                 >
                   <i class="ri-linkedin-box-line"></i>
@@ -99,7 +114,9 @@ const Hero = () => {
               </span>
               <span>
                 <a
-                  href="#github"
+                  href="https://github.com/BabaMboga"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-smallTextColor text-[18px] font-[600]"
                 >
                   <i class="ri-github-fill"></i>
@@ -107,7 +124,9 @@ const Hero = () => {
               </span>
               <span>
                 <a
-                  href="#twitter"
+                  href="https://twitter.com/baba_mboga"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-smallTextColor text-[18px] font-[600]"
                 >
                   <i class="ri-twitter-x-line"></i>
@@ -115,17 +134,29 @@ const Hero = () => {
               </span>
               <span>
                 <a
-                  href="#wordpress"
+                  href="https://babamboga.wordpress.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-smallTextColor text-[18px] font-[600]"
                 >
                   <i class="ri-wordpress-fill"></i>
+                </a>
+              </span>
+              <span>
+                <a
+                  href="https://nerdynetwork.slack.com/team/U06CLUXNHMM"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-smallTextColor text-[18px] font-[600]"
+                >
+                  <i class="ri-slack-fill"></i>
                 </a>
               </span>
             </div>
           </div>
           {/* ============ hero left end ============ */}
           {/* ============ hero img ============ */}
-          <div className="basis-1/3 mt-10 sm:mt-0 ">
+          <div className="flex basis-1/3 mt-10 sm:mt-0 ">
             <figure className="flex items-center justify-center">
               <img src={heroImg} alt="" className="rounded-[8px]" />
             </figure>
