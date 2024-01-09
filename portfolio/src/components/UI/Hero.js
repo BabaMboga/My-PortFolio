@@ -114,7 +114,7 @@ const Hero = () => {
               </span>
               <span>
                 <a
-                  href="#github"
+                  href="https://github.com/BabaMboga"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-smallTextColor text-[18px] font-[600]"
@@ -124,7 +124,7 @@ const Hero = () => {
               </span>
               <span>
                 <a
-                  href="#twitter"
+                  href="https://twitter.com/baba_mboga"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-smallTextColor text-[18px] font-[600]"
@@ -134,12 +134,22 @@ const Hero = () => {
               </span>
               <span>
                 <a
-                  href="#wordpress"
+                  href="https://babamboga.wordpress.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-smallTextColor text-[18px] font-[600]"
                 >
                   <i class="ri-wordpress-fill"></i>
+                </a>
+              </span>
+              <span>
+                <a
+                  href="https://nerdynetwork.slack.com/team/U06CLUXNHMM"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-smallTextColor text-[18px] font-[600]"
+                >
+                  <i class="ri-slack-fill"></i>
                 </a>
               </span>
             </div>
