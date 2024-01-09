@@ -53,7 +53,7 @@ const Services = () => {
             What do I help?
           </h2>
           <p>
-            As a seasoned developer, I offer expertise in a variety of
+            As a dedicated developer, I offer expertise in a variety of
             technologies, specializing in frontend and backend development,
             UI/UX design and more. My skills span a variety of technologies,
             frameworks and libraries like:
