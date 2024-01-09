@@ -1,10 +1,49 @@
 import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import frontendImg from "../../assets/images/front-end.png";
 import backendImg from "../../assets/images/backend.png";
 import uiuxImg from "../../assets/images/design.png";
 import appsImg from "../../assets/images/apps.png";
+import cssImg from "../../assets/images/project-icons/css-3.png"
+import htmlImg from "../../assets/images/project-icons/html-5.png"
+import flaskImg from "../../assets/images/project-icons/icons8-flask.svg"
+import javascriptImg from "../../assets/images/project-icons/icons8-javascript.svg"
+import reactImg from "../../assets/images/project-icons/icons8-react.svg"
+import tailwindCssImg from "../../assets/images/project-icons/icons8-tailwindcss.svg"
+import javaImg from "../../assets/images/project-icons/java.png"
+import jsImg from "../../assets/images/project-icons/js.png"
+import pythonImg from "../../assets/images/project-icons/python.png"
+import reactImg2 from "../../assets/images/project-icons/react.png"
+import sqlImg from "../../assets/images/project-icons/sql-server.png"
 
 const Services = () => {
+
+  const slideShowIcons = [
+    <img src={cssImg} alt="CSS" />,
+    <img src={htmlImg} alt="HTML" />,
+    <img src={flaskImg} alt="Flask" />,
+    <img src={javascriptImg} alt="JavaScript" />,
+    <img src={reactImg} alt="React" />,
+    <img src={tailwindCssImg} alt="Tailwind CSS" />,
+    <img src={javaImg} alt="Java" />,
+    <img src={jsImg} alt="JS" />,
+    <img src={pythonImg} alt="Python" />,
+    <img src={reactImg2} alt="React" />,
+    <img src={sqlImg} alt="SQL" />,
+  ];
+
+  const sliderSettings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow:3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  }
+
   return (
     <section id="services">
       <div className="container lg:pt-5">
@@ -12,12 +51,19 @@ const Services = () => {
           <h2 className="text-headingColor font-[800] text-[2.4 rem] mb-5">
             What do I help
           </h2>
-          <p>
+          {/* <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, uis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
-          </p>
+          </p> */}
+          <Slider {...sliderSettings} className= " flex items-center px-20 w-[50%] h-[40%] mt-4 mr-15 ">
+              {slideShowIcons.map((icon, index) => (
+                <div key={index} className="icon-slide">
+                  {icon}
+                </div>
+              ))}
+            </Slider>
         </div>
 
         <div className="flex flex-col justify-center sm:py-12">
