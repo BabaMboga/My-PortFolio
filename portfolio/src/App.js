@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Aos from "aos";
 import "./App.css";
 import Header from "./components/Header/Header";
@@ -9,16 +9,20 @@ import Portfolio from "./components/UI/Portfolio";
 import Contact from './components/UI/Contact'
 
 function App() {
+
+  //Manage State of the Header
+  const [showHeader, setShowHeader] = useState(true);
+
   useEffect(() => {
     Aos.init();
   }, []);
   return (
     <>
-      <Header />
+      {showHeader && <Header />}
       <main>
         <Hero />
         <Services />
-        <Portfolio />
+        <Portfolio setShowHeader={setShowHeader} />
         <Contact />
       </main>
       <Footer />
