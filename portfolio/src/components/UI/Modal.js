@@ -1,8 +1,13 @@
 import React from "react";
 import portfolios from "../../assets/data/portfolioData";
 
-const Modal = ({ activeID, setShowModal }) => {
+const Modal = ({ activeID, setShowModal, setShowHeader }) => {
   const portfolio = portfolios.find((portfolio) => portfolio.id === activeID);
+
+  const closeModal = () => {
+    setShowModal(false);
+    setShowHeader(true);
+  };
   return (
     <div className="w-full h-full fixed top-0 left-0 z-10 bg-headingColor bg-opacity-40">
       <div
@@ -47,9 +52,9 @@ const Modal = ({ activeID, setShowModal }) => {
           </a>
         </div>
         <button
-          onClick={() => setShowModal(false)}
+          onClick={() => closeModal()}
           className="w-1[1.8rem] h-[1.8rem] bg-[white] absolute top-[1.7rem] right-[1.7rem] text-[25px]
-             flex items-center justify-center rounded-[8px] leading-0 cursor-pointer border-8"
+              flex items-center justify-center rounded-[8px] leading-0 cursor-pointer border-8"
         >
           &times;
         </button>
