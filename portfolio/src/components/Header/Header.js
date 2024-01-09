@@ -26,7 +26,7 @@ const Header = ({showHeader}) => {
     return () => { 
       window.removeEventListener("scroll", stickyHeaderFunc);
         };
-}, []);
+}, );
 
   const handleClick = (e) => {
     e.preventDefault();
