@@ -40,6 +40,7 @@ const Contact = () => {
             <form className="w-full" onSubmit={handleSubmit}>
               <div className="mb-5">
                 <input
+                  name="name"
                   type="text"
                   placeholder="Enter your name"
                   className="w-full p-3 focus:outline-none rounded-[5px]"
@@ -47,6 +48,7 @@ const Contact = () => {
               </div>
               <div className="mb-5">
                 <input
+                  name="email"
                   type="email"
                   placeholder="Enter your email"
                   className="w-full p-3 focus:outline-none rounded-[5px]"
@@ -54,6 +56,7 @@ const Contact = () => {
               </div>
               <div className="mb-5">
                 <input
+                  name="subject"
                   type="text"
                   placeholder="Subject"
                   className="w-full p-3 focus:outline-none rounded-[5px]"
@@ -61,6 +64,7 @@ const Contact = () => {
               </div>
               <div className="mb-5">
                 <textarea
+                  name="message"
                   type="text"
                   rows={5}
                   placeholder="Write your message"
