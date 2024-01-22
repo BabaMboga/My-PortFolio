@@ -10,9 +10,11 @@ const Contact = () => {
     const subject = event.target.elements.subject.value;
     const message = event.target.elements.message.value;
 
+    const encodedMessage = encodeURIComponent(`Good day, my name is ${name}. ${message} (${email})`);
+
     // Open email client with form data
 
-    window.location.href = `mailto:odhisayim@gmail.com?subject=${subject} & body=Good day, my name is ${name}. ${message} (${email})`
+    window.location.href = `mailto:odhisayim@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodedMessage}`;
   };
   
   return (
