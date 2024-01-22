@@ -40,6 +40,8 @@ const Footer = () => {
               >
                 <a
                   href="https://github.com/BabaMboga"
+                  target="blank"
+                  rel="noopener noreferrer"
                   className="text-gray-300 font-[500] text-[18px]"
                 >
                   <i class="ri-github-line"></i>
@@ -51,6 +53,8 @@ const Footer = () => {
               >
                 <a
                   href="https://twitter.com/baba_mboga"
+                  target="blank"
+                  rel="noopener noreferrer"
                   className="text-gray-300 font-[500] text-[18px]"
                 >
                   <i class="ri-twitter-x-fill"></i>
@@ -62,6 +66,8 @@ const Footer = () => {
               >
                 <a
                   href="https://www.linkedin.com/in/ayim-william/"
+                  target="blank"
+                  rel="noopener noreferrer"
                   className="text-gray-300 font-[500] text-[18px]"
                 >
                   <i class="ri-linkedin-box-line"></i>
@@ -73,6 +79,8 @@ const Footer = () => {
               >
                 <a
                   href="https://www.facebook.com/babamboga/"
+                  target="blank"
+                  rel="noopener noreferrer"
                   className="text-gray-300 font-[500] text-[18px]"
                 >
                   <i class="ri-facebook-box-line"></i>
@@ -84,6 +92,8 @@ const Footer = () => {
               >
                 <a
                   href="https://babamboga.wordpress.com/"
+                  target="blank"
+                  rel="noopener noreferrer"
                   className="text-gray-300 font-[500] text-[18px]"
                 >
                   <i class="ri-wordpress-fill"></i>
@@ -95,6 +105,8 @@ const Footer = () => {
               >
                 <a
                   href="https://nerdynetwork.slack.com/team/U06CLUXNHMM"
+                  target="blank"
+                  rel="noopener noreferrer"
                   className="text-gray-300 font-[500] text-[18px]"
                 >
                   <i class="ri-slack-line"></i>
