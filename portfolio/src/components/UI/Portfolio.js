@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import data from "../../assets/data/portfolioData";
+import data from "../../assets/data/portfolioData2";
 import Modal from './Modal'
 
 const Portfolio = () => {
@@ -23,15 +23,20 @@ const Portfolio = () => {
       setPortfolios(data);
     }
 
-    if (selectTab === "web-design") {
+    if (selectTab === "elementary") {
       const filteredData = data.filter(
-        (item) => item.category === "Web Design"
+        (item) => item.category === "Elementary"
       );
       setPortfolios(filteredData);
     }
 
-    if (selectTab === "ux-design") {
-      const filteredData = data.filter((item) => item.category === "Ux");
+    if (selectTab === "intermediate") {
+      const filteredData = data.filter((item) => item.category === "Intermediate");
+      setPortfolios(filteredData);
+    }
+
+    if (selectTab === "capstone") {
+      const filteredData = data.filter((item) => item.category === "Capstone" );
       setPortfolios(filteredData);
     }
   }, [selectTab]);
@@ -55,20 +60,22 @@ const Portfolio = () => {
               All
             </button>
             <button
-              onClick={() => setSelectTab("web-design")}
+              onClick={() => setSelectTab("elementary")}
               className="text-smallTextColor border border-solid border-smallTextColor
             py-2 px-4 rounded-[8px]"
             >
-              Simple
+              Elementary
             </button>
             <button
-              onClick={() => setSelectTab("ux-design")}
+              onClick={() => setSelectTab("intermediate")}
               className="text-smallTextColor border border-solid border-smallTextColor
             py-2 px-4 rounded-[8px]"
             >
               Intermediate
             </button>
-            <button className="text-smallTextColor border border-solid border-smallTextColor
+            <button 
+              onClick={() => setSelectTab("capstone")}
+              className="text-smallTextColor border border-solid border-smallTextColor
             py-2 px-4 rounded-[8px]">
                 Capstone
             </button>

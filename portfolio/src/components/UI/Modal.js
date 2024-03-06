@@ -1,5 +1,5 @@
 import React from "react";
-import portfolios from "../../assets/data/portfolioData";
+import portfolios from "../../assets/data/portfolioData2";
 
 const Modal = ({ activeID, setShowModal }) => {
   const portfolio = portfolios.find((portfolio) => portfolio.id === activeID);
@@ -37,7 +37,10 @@ const Modal = ({ activeID, setShowModal }) => {
               </span>
             ))}
           </div>
-          <a href={portfolio.siteUrl}>
+          <a href={portfolio.siteUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button
               className="bg-primaryColor text-white py-2 px-4 my-8 rounded-[8px] font-[500]
                     hover:bg-headingColor ease-in duration-300"
