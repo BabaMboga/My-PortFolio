@@ -30,6 +30,15 @@ This portfolio serves as a representation of my journey as a full stack develope
 
 This project is built using React, HTML5 and Tailwind CSS and deployed using vercel.
 
+### Demo
+
+Use the link provided below to navigate to my portfolio
+https://my-portfolio-nine-chi-77.vercel.app/
+
+This is the Landing Page
+
+![My Image](/portfolio/src/assets/images/Screenshot-2024-03-11-182444.png)
+
 ### Getting Started 
 
 To run this portfolio locally, follow these steps:
