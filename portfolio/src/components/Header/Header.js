@@ -46,7 +46,7 @@ const Header = () => {
 
     if (isVisible) {
       const exitButton = document.createElement('li');
-      exitButton.innerHTML = '<i class="ri-close-fill"></i>';
+      exitButton.innerHTML = '<i class="ri-close-circle-fill"></i>';
       exitButton.classList.add('exit-button');
       exitButton.addEventListener('click', () => {
         menu.classList.remove('show__menu');

@@ -71,6 +71,8 @@ section {
 
     .exit-button{
         margin-bottom: 150px;
+        margin-left: 25%;
+        color: #9A031E;
     }
     .menu {
         width: 100%;
