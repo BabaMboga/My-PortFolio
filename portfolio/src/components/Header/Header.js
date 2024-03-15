@@ -32,11 +32,42 @@ const Header = () => {
     window.scrollTo({
       top: location - 80,
       left: 0,
+      behavior: "smooth"
     });
   };
 
-  const toggleMenu = () => menuRef.current.classList.toggle('show__menu')
+  const toggleMenu = () => {
+    const menu = menuRef.current;
+    if(!menu) return;
 
+    menu.classList.toggle('show__menu');
+
+    const isVisible = menu.classList.contains('show__menu');
+
+    if (isVisible) {
+      const exitButton = document.createElement('li');
+      exitButton.innerHTML = '<i class="ri-close-fill"></i>';
+      exitButton.classList.add('exit-button');
+      exitButton.addEventListener('click', () => {
+        menu.classList.remove('show__menu');
+        exitButton.remove();
+      });
+
+      const ulElement = menu.querySelector('ul')
+
+      // menu.appendChild(exitButton);
+      ulElement.insertBefore(exitButton, ulElement.firstChild);
+  
+    } else {
+      const exitButton = menu.querySelector('.exit-button');
+      if (exitButton) {
+        exitButton.remove();
+      }
+    }
+  
+  };
+
+ 
   return (
     <header ref={headerRef} className="w-full h-[80px] flex items-center">
       <div className="container">
