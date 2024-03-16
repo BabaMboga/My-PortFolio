@@ -40,7 +40,7 @@ section {
 
 /* Additional css for the carousel */
 .slick-slider{
-    width: 60%;
+    width: 56%;
     margin: 0 auto;
 }
 /* Adjust slider item width for smaller screens */
@@ -84,6 +84,7 @@ section {
         margin-left: 25%;
         color: #9A031E;
     }
+
 
     /* show arrows only on larger screens */
     .slick-prev, .slick-next {
