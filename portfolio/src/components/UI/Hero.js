@@ -93,7 +93,7 @@ const Hero = () => {
               </span>
               I am a passionate and highly motivated full stack software
               engineer with comprehensive training in a wide array of cutting
-              edge technologies such as:
+              edge technologies.
             </p>
 
             <div className=""></div>
