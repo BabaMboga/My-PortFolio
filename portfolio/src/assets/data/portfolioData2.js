@@ -10,7 +10,7 @@ const portfolios = [
         imgUrl: portfolioImg05,
         category: "Elementary",
         title: "Fandango Movie Tickets",
-        description: "Simple site that utilises an api for updating movie tickets",
+        description: "Simple site that utilises an api for updating movie tickets and access to movie details.",
         technologies: ["HTML", "CSS", "Javascript"],
         siteUrl: "https://babamboga.github.io/Weekly-code-challenge/",
     },
