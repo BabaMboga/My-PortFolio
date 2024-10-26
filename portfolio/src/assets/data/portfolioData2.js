@@ -3,8 +3,37 @@ import portfolioImg02 from "../images/portfolio-images/portfolio-02.png";
 import portfolioImg03 from "../images/portfolio-images/portfolio-03.png";
 import portfolioImg04 from "../images/portfolio-images/portfolio-04.png";
 import portfolioImg05 from "../images/portfolio-images/portfolio-05.png";
+import portfolioImg06 from "../images/portfolio-images/portfolio-06.png";
+import portfolioImg07 from "../images/portfolio-images/portfolio-07.png";
+import portfolioImg08 from "../images/portfolio-images/portfolio-08.png";
 
 const portfolios = [
+    {
+        id: "08",
+        imgUrl: portfolioImg08,
+        category: "Elementary",
+        title: "Toy Tale",
+        description: "Simple site that utilises an api for showcasing a catalog of toy story characters.",
+        technologies: ["HTML", "CSS", "Javascript"],
+        siteUrl: " https://babamboga.github.io/phase-1-practice-toy-tale/",
+    },{
+        id: "07",
+        imgUrl: portfolioImg07,
+        category: "Elementary",
+        title: "Woof Woof Dog App",
+        description: "Simple site that utilises an api for updating dogs based on their behavior.",
+        technologies: ["HTML", "CSS", "Javascript"],
+        siteUrl: "https://babamboga.github.io/phase-1-woof-woof-js-practice/",
+    },
+    {
+        id: "06",
+        imgUrl: portfolioImg06,
+        category: "Elementary",
+        title: "Practcie Dog Show",
+        description: "Simple site that utilises an api for updating dogs in a dog show.",
+        technologies: ["HTML", "CSS", "Javascript"],
+        siteUrl: "https://babamboga.github.io/phase-1-practice-dog-show/",
+    },
     {
         id: "05",
         imgUrl: portfolioImg05,
