@@ -169,7 +169,7 @@ const Hero = () => {
           >
             <div className="mb-10">
               <h2 className="text-headingColor font-[700] text-[32px]">
-                <CountUp start={0} end={1} duration={5} suffix="+" />
+                <CountUp start={0} end={2} duration={8} suffix="+" />
               </h2>
               <h4 className="text-headingColor font-[600] text-[18px]">
                 Years of Experience
@@ -177,7 +177,7 @@ const Hero = () => {
             </div>
             <div className="mb-10">
               <h2 className="text-headingColor font-[700] text-[32px]">
-                <CountUp start={0} end={100} duration={2} suffix="%" />
+                <CountUp start={0} end={100} duration={5} suffix="%" />
               </h2>
               <h4 className="text-headingColor font-[600] text-[18px]">
                 Success Rate
@@ -185,7 +185,7 @@ const Hero = () => {
             </div>
             <div className="mb-10">
               <h2 className="text-headingColor font-[700] text-[32px]">
-                <CountUp start={0} end={5} duration={2} suffix="+" />
+                <CountUp start={0} end={9} duration={10} suffix="+" />
               </h2>
               <h4 className="text-headingColor font-[600] text-[18px]">
                 Projects
@@ -193,7 +193,7 @@ const Hero = () => {
             </div>
             <div className="mb-10">
               <h2 className="text-headingColor font-[700] text-[32px]">
-                <CountUp start={0} end={1000} duration={2} suffix="+" />
+                <CountUp start={0} end={1000} duration={10} suffix="+" />
               </h2>
               <h4 className="text-headingColor font-[700] text-[18px]">
                 Hours Spent Coding
