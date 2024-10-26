@@ -16,6 +16,15 @@ const portfolios = [
         description: "Simple site that utilises an api for showcasing a catalog of toy story characters.",
         technologies: ["HTML", "CSS", "Javascript"],
         siteUrl: " https://babamboga.github.io/phase-1-practice-toy-tale/",
+    },
+    {
+        id: "08",
+        imgUrl: portfolioImg08,
+        category: "Elementary",
+        title: "Toy Tale",
+        description: "Simple site that utilises an api for showcasing a catalog of toy story characters.",
+        technologies: ["HTML", "CSS", "Javascript"],
+        siteUrl: " https://babamboga.github.io/phase-1-practice-toy-tale/",
     },{
         id: "07",
         imgUrl: portfolioImg07,
