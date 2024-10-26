@@ -6,16 +6,17 @@ import portfolioImg05 from "../images/portfolio-images/portfolio-05.png";
 import portfolioImg06 from "../images/portfolio-images/portfolio-06.png";
 import portfolioImg07 from "../images/portfolio-images/portfolio-07.png";
 import portfolioImg08 from "../images/portfolio-images/portfolio-08.png";
+import portfolioImg09 from "../images/portfolio-images/portfolio-09.png";
 
 const portfolios = [
     {
-        id: "08",
-        imgUrl: portfolioImg08,
-        category: "Elementary",
-        title: "Toy Tale",
-        description: "Simple site that utilises an api for showcasing a catalog of toy story characters.",
+        id: "09",
+        imgUrl: portfolioImg09,
+        category: "Intermediate",
+        title: "Find a Farmer",
+        description: "A platform that seeks to bridge the gap between the famrer and his customer by cutting down the need for middlemen.",
         technologies: ["HTML", "CSS", "Javascript"],
-        siteUrl: " https://babamboga.github.io/phase-1-practice-toy-tale/",
+        siteUrl: " https://babamboga.github.io/Find-a-Farmer/",
     },
     {
         id: "08",
