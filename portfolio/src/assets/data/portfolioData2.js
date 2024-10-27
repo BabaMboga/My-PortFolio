@@ -7,8 +7,18 @@ import portfolioImg06 from "../images/portfolio-images/portfolio-06.png";
 import portfolioImg07 from "../images/portfolio-images/portfolio-07.png";
 import portfolioImg08 from "../images/portfolio-images/portfolio-08.png";
 import portfolioImg09 from "../images/portfolio-images/portfolio-09.png";
+import portfolioImg10 from "../images/portfolio-images/portfolio-10.png";
 
 const portfolios = [
+    {
+        id: "09",
+        imgUrl: portfolioImg10,
+        category: "Capstone",
+        title: "Adventour",
+        description: "Advetour is an application that provides travel-related information to customers acting like an easy access tour guide that tells you where to go, what to see and where to eat. It offers the user a chance to plan their trips at moments notice without having to access too maney materials for the perfect site within Nairobi.",
+        technologies: ["React"],
+        siteUrl: " https://project-adventour.vercel.app/",
+    },
     {
         id: "09",
         imgUrl: portfolioImg09,
