@@ -17,6 +17,10 @@ import jsImg from "../../assets/images/project-icons/js.png";
 import pythonImg from "../../assets/images/project-icons/python.png";
 import reactImg2 from "../../assets/images/project-icons/react.png";
 import sqlImg from "../../assets/images/project-icons/sql-server.png";
+import gitImg from "../../assets/images/project-icons/git.svg";
+import nextImg from "../../assets/images/project-icons/nextjs.svg";
+import reduxImg from "../../assets/images/project-icons/redux.svg";
+import typescriptImg from "../../assets/images/project-icons/typescript-icon.svg";
 
 const Services = () => {
   // Create an array of icon elements
@@ -32,6 +36,10 @@ const Services = () => {
     <img src={pythonImg} alt="Python" />,
     <img src={reactImg2} alt="React" />,
     <img src={sqlImg} alt="SQL" />,
+    <img src={gitImg} alt="Git" />,
+    <img src={nextImg} alt="Nextjs" />,
+    <img src={reduxImg} alt="Redux" />,
+    <img src={typescriptImg} alt="Typescript" />,
   ];
 
   // Settings for slider component set
